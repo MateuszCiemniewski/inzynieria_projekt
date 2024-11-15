@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS znizki (
 CREATE TABLE IF NOT EXISTS powiadomienia (
     ID_Powiadomienia INT AUTO_INCREMENT PRIMARY KEY,
     ID_Klienta INT,
-    Typ_powiadomienia ENUM('Zaliczka', 'Przypomnienie', 'Anulowanie') NOT NULL,
+    Typ_powiadomienia ENUM('Zaliczka', 'Przypomnienie', 'Anulowanie','Informacja','Dziekujemy') NOT NULL,
     Data_wyslania DATE NOT NULL,
     Tresc TEXT NOT NULL,
     FOREIGN KEY (ID_Klienta) REFERENCES klient(ID_Klienta)
